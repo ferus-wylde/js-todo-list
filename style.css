@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-image: linear-gradient(120deg,#904EF2,#506ECF);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;   
+}
+
+header {
+    font-size-adjust: 1.5rem;
+    font-size: xx-large;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    color: #506ECF
+}
+
+form button{
+    color: #506ECF;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #904EF2;
+    color: white;
+}
+
+.reminder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reminder-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.reminder{
+    margin: 0.5rem;
+    background: white;
+    color: #506ECF;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.75s ease;
+}
+
+.reminder li{
+    flex: 1;
+}
+
+.delete-btn,
+.completed-btn{
+    background: #ff6363;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.completed-btn{
+    background: #5aff7d
+}
+.reminder-item{
+    padding: 0rem 1rem;
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    background: white;
+  }
+  /*Select*/
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #904EF2;
+    font-family: "Roboto-Sans", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    padding: 1.2rem;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.2rem;
+    background: #506ECF;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .select:hover::after{
+      background: #904EF2;
+      color: white;
+  }
